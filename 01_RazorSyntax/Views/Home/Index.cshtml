@@ -1,0 +1,31 @@
+﻿
+@{
+    Layout = null;
+}
+
+@{
+    string ad = "Altan";
+    string soyad = "Demirci";
+
+    List<string> ogrenciler = new List<string>() { "Mevlüt", "Ece", "Canan", "Mert", "Furkan" };
+
+        }
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        <h1>@ad</h1>
+
+        @foreach (string item in ogrenciler)
+        {
+            <h2>@item</h2>
+        }
+    </div>
+</body>
+</html>

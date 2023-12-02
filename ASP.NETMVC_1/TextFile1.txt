@@ -1,0 +1,13 @@
+﻿
+
+ASP.NET : C# ile geliştirilen bir projenin web tabanlı olmasını sağlar. 2009 yılında kullanılmaya başlanmıştır.
+MVC : Design Pattern'dir ve User Interface tarafında(tasarım) alanında kullanılır. Models - Views - Controllers / 1979 kullanılmaya başlanmıştır. 
+Design Pattern : Basitçe geliştirilen projede hangi kodun hangi klasör/class altında olacağını, yazılan kodlama da yapılan işlemlere bağlı olarak neyin nerede olacağını belirleme işlemidir. Proje yönetimini ve geliştirme/güncelleme işlemlerinin daha kolay yapılabilmesini sağlar. 
+
+**** MVC ****
+
+MODELS		: Projede kullanılan classları barındıran klasördür.
+VIEWS		: Projenin Html,css ve Javascript ile geliştirilen görsel sayfalarının bulunduğu klasördür.
+CONTROLLERS : View ile Model arasındaki işlemleri yöneten kodların/classların olduğu klasördür. 
+
+

@@ -1,0 +1,44 @@
+﻿
+@{
+    Layout = null;
+
+    string mesaj = "sayfa post olmadı";
+
+    DateTime tarih = new DateTime(2023, 11, 12, 15, 22, 48);
+
+
+    string data = "<script lang='javascript'>alert('Butona Tıklandı')</script>";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index2</title>
+</head>
+<body>
+    <div> 
+        <form method="post">
+            @if (IsPost) 
+            {
+                mesaj = "sayfa post oldu.";
+            }
+
+            @mesaj
+            <br />
+            <button type="submit">Post Et</button>
+        </form>
+
+        <br />
+        <br />
+        @("dd : "+String.Format("{0:dd}",tarih))<br />
+        @("MM : "+String.Format("{0:MM}",tarih))<br />
+        @("yy : "+String.Format("{0:yy}",tarih))<br />
+        @("yyyy : "+String.Format("{0:yyyy}",tarih))<br />
+        <br />
+
+        @Html.Raw(data)
+    </div>
+</body>
+</html>

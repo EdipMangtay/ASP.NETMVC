@@ -1,0 +1,35 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>About</title>
+</head>
+<body>
+    <div>
+        <h1>ABOUT</h1><br />
+
+        <!-- HATALI URL - mutlaka controller adı verilmeli-->
+        <a href="/Contact">CONTACT</a><br />
+        @Html.ActionLink("İLETİŞİM", "Contact") <br /><br /><br />
+
+
+
+        <a href="/Home/Index">HOME INDEX</a> <br /><br />
+        <a href="/Default/Index">DEFAULT INDEX</a><br /><br /><br /><br />
+
+        @Html.ActionLink("HOME ANASAYFA", "Index")<br />
+        @Html.ActionLink("DEFAULT ANASAYFA", "Index", "Default")<br /><br /><br /><br />
+
+
+        <a href="@Url.Action("Index")">ANASAYFA</a><br>
+        <a href="@Url.Action("Index","Default")">ANASAYFA</a>
+
+    </div>
+</body>
+</html>

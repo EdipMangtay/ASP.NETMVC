@@ -1,0 +1,37 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Register</title>
+</head>
+<body>
+    <div> 
+        <!-- DATA TRANSFER : POST - button:submit-->
+
+        <!-- Get : Veri çekme
+             Post: Veri gönderme
+            -->
+        <form action="/Home/Index" method="post">
+            <label>ADINIZ:</label>
+            <input type="text" value="" name="isim" placeholder="adınız..." /><br />
+            <label>SOYADINIZ:</label>
+            <input type="text" value="" name="soyisim" /><br />
+
+            @*@Html.Label("","Kullanıcı Adı")*@
+            KULLANICI ADI:
+            @Html.TextBox("kullaniciadi", new { placeholder = "kullanıcıadı.." })<br />
+
+            ADRES:
+            @Html.TextArea("adres","adresiniz",8,30,null)<br />
+
+            <button type="submit">KAYIT OL</button>
+        </form>
+    </div>
+</body>
+</html>
